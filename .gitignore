@@ -1,0 +1,7 @@
+*.o
+impl/pnr/*
+impl/gwsynthesis/*
+impl/temp/*
+src/gowin_empu/temp/*
+!impl/pnr/*.fs
+!impl/pnr/*.rpt.txt
