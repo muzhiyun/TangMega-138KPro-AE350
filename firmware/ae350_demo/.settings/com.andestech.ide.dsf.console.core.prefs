@@ -1,2 +1,2 @@
-com.andestech.ide.dsf.console.core.model.GDBHistory={\n  "historyCommands"\: []\n}
+com.andestech.ide.dsf.console.core.model.GDBHistory={\n  "historyCommands"\: [\n    "help",\n    "b"\n  ]\n}
 eclipse.preferences.version=1

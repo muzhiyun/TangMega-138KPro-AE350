@@ -36,7 +36,8 @@
  * BUILD_XIP  : ae350-xip.sag	: booting and running in Flash memory
  *
  */
-#define BUILD_MODE	BUILD_BURN
+#define BUILD_MODE	BUILD_LOAD
+//BUILD_BURN
 
 
 // The following is predefined settings

@@ -9,9 +9,9 @@ C_SRCS :=
 S_UPPER_SRCS := 
 O_SRCS := 
 SAG_SRCS += \
-/cygdrive/E/RDS5/workspace/ae350_demo/src/bsp/sag/ae350-ddr.sag
+/cygdrive/C/Users/MuZhi/Desktop/zynq/138k/project/AE350/RiscV_AE350_SOC_V1.0/RiscV_AE350_SOC_V1.0/ref_design/FPGA_RefDesign/DK_START_GW5AT138_V2.0/ae350_demo/firmware/ae350_demo/src/bsp/sag/ae350-ddr.sag
 SAG_FILE += \
-/cygdrive/E/RDS5/workspace/ae350_demo/src/bsp/sag/ae350-ddr.sag
+/cygdrive/C/Users/MuZhi/Desktop/zynq/138k/project/AE350/RiscV_AE350_SOC_V1.0/RiscV_AE350_SOC_V1.0/ref_design/FPGA_RefDesign/DK_START_GW5AT138_V2.0/ae350_demo/firmware/ae350_demo/src/bsp/sag/ae350-ddr.sag
 GPROF_OUT := 
 SIZE_OUTPUTS := 
 READELF_OUTPUTS := 

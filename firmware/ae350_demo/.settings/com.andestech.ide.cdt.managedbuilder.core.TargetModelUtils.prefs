@@ -3,7 +3,7 @@ connectType=ICE
 connectTypeOptionData=2
 connectTypeOptionSettings={"id"\:2,"name"\:"ICE","type"\:"ICE","misc_argument"\:"","mechanism"\:"LOCAL","hostname"\:"","port"\:"","pargs"\:"","pport"\:"","version"\:"Andes ICEman","sidCompatible"\:false,"bport"\:"","tport"\:"","path"\:"${ANDESIGHT_ROOT}/ice/ICEman","md5"\:"d5b6ff3f4c8c2389781655c1ea24482b"}
 eclipse.preferences.version=1
-ice.config.setting={vid\=7420, bus\=1, port\=4, pid\=1, device\=7, key\=default}
+ice.config.setting={vid\=1027, bus\=1, port\=1, pid\=24592, device\=25, key\=default}
 iceman.misc.args=
 iceman.misc.args.map={2\=}
 name=ADP-AE350-A25-GOWIN
