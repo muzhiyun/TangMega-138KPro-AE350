@@ -72,13 +72,15 @@ int demo_led(void)
 
 	// Initializes GPIO
 	GPIO_Dri->Initialize(gpio_callback);
-
+	printf("\r\n75\r\n");
 	// Set GPIO direction (GPIO pins as led: output)
 	GPIO_Dri->SetDir(GPIO_LED_USED_MASK, AE350_GPIO_DIR_OUTPUT);
+	printf("\r\n78\r\n");
 
 	// Waterfall led
 	while(1)
 	{
+		printf("\r\n83\r\n");
 		begin_time = time();
 
 #ifdef CFG_CACHE_ENABLE
@@ -86,7 +88,7 @@ int demo_led(void)
 #else
 		simple_delay_ms(100);
 #endif
-
+		printf("\r\n91\r\n");
 		// This led
 		led_pin = 0x1 << (num++);
 

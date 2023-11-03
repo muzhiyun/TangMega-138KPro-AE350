@@ -85,19 +85,19 @@ int32_t gpio_initialize(AE350_GPIO_SignalEvent_t cb_event)
 
     // Write 1 to clear interrupt status
 	DEV_GPIO->INTRSTATUS = 0xFFFFFFFF;
-
+	printf("\r\n88\r\n");
    // Priority must be set > 0 to trigger the interrupt
 	__nds__plic_set_priority(IRQ_GPIO_SOURCE, 1);
-
+	printf("\r\n91\r\n");
 	// Enable PLIC interrupt GPIO source
 	__nds__plic_enable_interrupt(IRQ_GPIO_SOURCE);
-
+	printf("\r\n94\r\n");
 	// Enable the Machine-External bit in MIE
 	set_csr(NDS_MIE, MIP_MEIP);
-
+	printf("\r\n97\r\n");
 	// Enable GIE
 	set_csr(NDS_MSTATUS, MSTATUS_MIE);
-
+	printf("\r\n100\r\n");
 	// Interrupt event
 	gpio_info.cb_event = cb_event;
 

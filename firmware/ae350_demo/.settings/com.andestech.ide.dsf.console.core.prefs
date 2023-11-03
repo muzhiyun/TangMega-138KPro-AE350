@@ -1,2 +1,2 @@
-com.andestech.ide.dsf.console.core.model.GDBHistory={\n  "historyCommands"\: [\n    "help",\n    "b"\n  ]\n}
+com.andestech.ide.dsf.console.core.model.GDBHistory={\n  "historyCommands"\: [\n    "continue",\n    "break 0x1f04",\n    "stepi",\n    "info stack",\n    "reset-and-hold",\n    "info registers",\n    "help",\n    "b"\n  ]\n}
 eclipse.preferences.version=1

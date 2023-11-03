@@ -12,21 +12,21 @@
   <Part Number>: GW5AST-LV138FPG676AES
   <Device>: GW5AST-138B
   <Device Version>: B
-  <Created Time>:Thu Nov 02 22:31:01 2023
+  <Created Time>:Sat Nov 04 03:02:26 2023
 
 
 2. PnR Details
 
   Running placement:
     Placement Phase 0: CPU time = 0h 0m 2s, Elapsed time = 0h 0m 2s
-    Placement Phase 1: CPU time = 0h 0m 0.209s, Elapsed time = 0h 0m 0.209s
-    Placement Phase 2: CPU time = 0h 0m 2s, Elapsed time = 0h 0m 2s
-    Placement Phase 3: CPU time = 0h 0m 8s, Elapsed time = 0h 0m 8s
+    Placement Phase 1: CPU time = 0h 0m 0.15s, Elapsed time = 0h 0m 0.15s
+    Placement Phase 2: CPU time = 0h 0m 1s, Elapsed time = 0h 0m 1s
+    Placement Phase 3: CPU time = 0h 0m 9s, Elapsed time = 0h 0m 9s
     Total Placement: CPU time = 0h 0m 12s, Elapsed time = 0h 0m 12s
  Running routing:
-    Routing Phase 0: CPU time = 0h 0m 0.772s, Elapsed time = 0h 0m 0.772s
+    Routing Phase 0: CPU time = 0h 0m 0.787s, Elapsed time = 0h 0m 0.787s
     Routing Phase 1: CPU time = 0h 0m 44s, Elapsed time = 0h 0m 44s
-    Routing Phase 2: CPU time = 0h 0m 0.222s, Elapsed time = 0h 0m 0.222s
+    Routing Phase 2: CPU time = 0h 0m 0.22s, Elapsed time = 0h 0m 0.221s
     Routing Phase 3: CPU time = 0h 0m 0s, Elapsed time = 0h 0m 0s
     Total Routing: CPU time = 0h 0m 45s, Elapsed time = 0h 0m 45s
  Generate output files:

@@ -19,14 +19,14 @@
 <booleanAttribute key="SUPPORT_GENERAL_EXCEPTION_STORE_PAGE_FAULT" value="true"/>
 <booleanAttribute key="SUPPORT_HSP" value="false"/>
 <stringAttribute key="__rtos_tracer_target" value="__rtos_tracer_target"/>
-<booleanAttribute key="com.andestech.ide.debug.generalexception.handler.SUPPORT_GENERAL_EXCEPTION" value="true"/>
+<booleanAttribute key="com.andestech.ide.debug.generalexception.handler.SUPPORT_GENERAL_EXCEPTION" value="false"/>
 <booleanAttribute key="com.andestech.ide.debug.generalexception.handler.SUPPORT_GENERAL_EXCEPTION_HSP_AUTO_SET_BOUND" value="true"/>
 <stringAttribute key="com.andestech.ide.debug.generalexception.handler.SUPPORT_GENERAL_EXCEPTION_HSP_BOUND" value=""/>
 <stringAttribute key="com.andestech.ide.debug.generalexception.handler.SUPPORT_GENERAL_EXCEPTION_HSP_RECORD_TOP_BOUND" value=""/>
 <stringAttribute key="com.andestech.ide.debug.generalexception.handler.SUPPORT_GENERAL_EXCEPTION_HSP_SPBASE" value=""/>
 <intAttribute key="com.andestech.ide.debug.generalexception.handler.SUPPORT_HSP_TYPE" value="1"/>
 <stringAttribute key="com.andestech.ide.dsf.gdb.core.CONNECT_TYPE_OPTION_ID" value="2"/>
-<booleanAttribute key="com.andestech.ide.dsf.gdb.core.DISABLE_MEMORY_MAP" value="false"/>
+<booleanAttribute key="com.andestech.ide.dsf.gdb.core.DISABLE_MEMORY_MAP" value="true"/>
 <booleanAttribute key="com.andestech.ide.dsf.gdb.core.HOST_PORT_MANUALLY" value="false"/>
 <booleanAttribute key="com.andestech.ide.dsf.gdb.core.MCU_PROGRAM" value="true"/>
 <booleanAttribute key="com.andestech.ide.dsf.gdb.core.MEMORY_TRIGGER" value="false"/>
@@ -51,7 +51,7 @@
 <booleanAttribute key="org.eclipse.cdt.debug.gdbjtag.core.doReset" value="false"/>
 <stringAttribute key="org.eclipse.cdt.debug.gdbjtag.core.imageFileName" value=""/>
 <stringAttribute key="org.eclipse.cdt.debug.gdbjtag.core.imageOffset" value=""/>
-<stringAttribute key="org.eclipse.cdt.debug.gdbjtag.core.initCommands" value="load"/>
+<stringAttribute key="org.eclipse.cdt.debug.gdbjtag.core.initCommands" value="load&#13;&#10;set *(int *)0xF0100014 = 0x3C"/>
 <stringAttribute key="org.eclipse.cdt.debug.gdbjtag.core.ipAddress" value="localhost"/>
 <stringAttribute key="org.eclipse.cdt.debug.gdbjtag.core.jtagDeviceId" value="com.andestech.ide.dsf.gdbjtag.device.ice.AndesICEDevice"/>
 <booleanAttribute key="org.eclipse.cdt.debug.gdbjtag.core.loadImage" value="false"/>
@@ -60,7 +60,7 @@
 <intAttribute key="org.eclipse.cdt.debug.gdbjtag.core.portNumber" value="9900"/>
 <stringAttribute key="org.eclipse.cdt.debug.gdbjtag.core.runCommands" value=""/>
 <booleanAttribute key="org.eclipse.cdt.debug.gdbjtag.core.setPcRegister" value="false"/>
-<booleanAttribute key="org.eclipse.cdt.debug.gdbjtag.core.setResume" value="true"/>
+<booleanAttribute key="org.eclipse.cdt.debug.gdbjtag.core.setResume" value="false"/>
 <booleanAttribute key="org.eclipse.cdt.debug.gdbjtag.core.setStopAt" value="true"/>
 <stringAttribute key="org.eclipse.cdt.debug.gdbjtag.core.stopAt" value="main"/>
 <stringAttribute key="org.eclipse.cdt.debug.gdbjtag.core.symbolsFileName" value=""/>
@@ -75,7 +75,7 @@
 <booleanAttribute key="org.eclipse.cdt.dsf.gdb.UPDATE_THREADLIST_ON_SUSPEND" value="false"/>
 <stringAttribute key="org.eclipse.cdt.launch.COREFILE_PATH" value=""/>
 <stringAttribute key="org.eclipse.cdt.launch.DEBUGGER_START_MODE" value="remote"/>
-<stringAttribute key="org.eclipse.cdt.launch.PROGRAM_NAME" value="Debug\ae350_demo.adx"/>
+<stringAttribute key="org.eclipse.cdt.launch.PROGRAM_NAME" value="Debug/ae350_demo.adx"/>
 <stringAttribute key="org.eclipse.cdt.launch.PROJECT_ATTR" value="ae350_demo"/>
 <booleanAttribute key="org.eclipse.cdt.launch.PROJECT_BUILD_CONFIG_AUTO_ATTR" value="true"/>
 <stringAttribute key="org.eclipse.cdt.launch.PROJECT_BUILD_CONFIG_ID_ATTR" value="config.nds32le-elf-mculib-v5.exe.debug.1203678354"/>
