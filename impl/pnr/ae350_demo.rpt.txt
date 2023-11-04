@@ -12,21 +12,21 @@
   <Part Number>: GW5AST-LV138FPG676AES
   <Device>: GW5AST-138B
   <Device Version>: B
-  <Created Time>:Sat Nov 04 03:02:26 2023
+  <Created Time>:Sat Nov 04 15:15:11 2023
 
 
 2. PnR Details
 
   Running placement:
     Placement Phase 0: CPU time = 0h 0m 2s, Elapsed time = 0h 0m 2s
-    Placement Phase 1: CPU time = 0h 0m 0.15s, Elapsed time = 0h 0m 0.15s
+    Placement Phase 1: CPU time = 0h 0m 0.162s, Elapsed time = 0h 0m 0.161s
     Placement Phase 2: CPU time = 0h 0m 1s, Elapsed time = 0h 0m 1s
-    Placement Phase 3: CPU time = 0h 0m 9s, Elapsed time = 0h 0m 9s
+    Placement Phase 3: CPU time = 0h 0m 8s, Elapsed time = 0h 0m 8s
     Total Placement: CPU time = 0h 0m 12s, Elapsed time = 0h 0m 12s
  Running routing:
-    Routing Phase 0: CPU time = 0h 0m 0.787s, Elapsed time = 0h 0m 0.787s
+    Routing Phase 0: CPU time = 0h 0m 0.778s, Elapsed time = 0h 0m 0.777s
     Routing Phase 1: CPU time = 0h 0m 44s, Elapsed time = 0h 0m 44s
-    Routing Phase 2: CPU time = 0h 0m 0.22s, Elapsed time = 0h 0m 0.221s
+    Routing Phase 2: CPU time = 0h 0m 0.221s, Elapsed time = 0h 0m 0.222s
     Routing Phase 3: CPU time = 0h 0m 0s, Elapsed time = 0h 0m 0s
     Total Routing: CPU time = 0h 0m 45s, Elapsed time = 0h 0m 45s
  Generate output files:
@@ -82,8 +82,8 @@
   -----------------------
   I/O Bank  | Usage       
   -----------------------
-  bank 2   | 5/50(10%)   
-  bank 3   | 14/50(28%)  
+  bank 2   | 7/50(14%)   
+  bank 3   | 12/50(24%)  
   bank 4   | 2/50(4%)    
   bank 5   | 0/50(0%)    
   bank 6   | 22/50(44%)  
@@ -99,7 +99,7 @@
   -------------------------------
   PRIMARY       | 8/8(100%)
   LW            | 3/8(38%)
-  GCLK_PIN      | 6/24(25%)
+  GCLK_PIN      | 7/24(30%)
   PLL           | 2/12(17%)
   CLKDIV        | 1/24(5%)
   DLLDLY        | 0/12(0%)
@@ -133,12 +133,12 @@ Port Name        | Diff Pair | Loc./Bank     | Constraint | Dir.  | Site     | I
 ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 CLK              |           | P16/3         | Y          | in    | IOR103[B] | LVCMOS33   | OFF   | NONE      | OFF       | ON         | OFF        | OFF        | OFF             | OFF           | 3.3        | MEDIUM       
 RSTN             |           | K16/4         | Y          | in    | IOB104[A] | LVCMOS33   | OFF   | NONE      | OFF       | ON         | OFF        | OFF        | OFF             | OFF           | 3.3        | MEDIUM       
-UART2_RXD        |           | N16/3         | Y          | in    | IOR101[A] | LVCMOS33   | OFF   | NONE      | OFF       | ON         | OFF        | OFF        | OFF             | OFF           | 3.3        | MEDIUM       
+UART2_RXD        |           | U22/2         | Y          | in    | IOR31[A] | LVCMOS33   | OFF   | UP        | OFF       | ON         | OFF        | OFF        | OFF             | OFF           | 3.3        | MEDIUM       
 TCK_IN           |           | V17/2         | Y          | in    | IOR2[B]  | LVCMOS33   | OFF   | NONE      | OFF       | ON         | OFF        | OFF        | OFF             | OFF           | 3.3        | MEDIUM       
 TMS_IN           |           | V16/2         | Y          | in    | IOR2[A]  | LVCMOS33   | OFF   | NONE      | OFF       | ON         | OFF        | OFF        | OFF             | OFF           | 3.3        | MEDIUM       
 TRST_IN          |           | U15/2         | Y          | in    | IOR6[A]  | LVCMOS33   | OFF   | NONE      | OFF       | ON         | OFF        | OFF        | OFF             | OFF           | 3.3        | MEDIUM       
 TDI_IN           |           | V19/2         | Y          | in    | IOR15[A] | LVCMOS33   | OFF   | NONE      | OFF       | ON         | OFF        | OFF        | OFF             | OFF           | 3.3        | MEDIUM       
-UART2_TXD        |           | P15/3         | Y          | out   | IOR103[A] | LVCMOS33   | 8     | NONE      | OFF       | OFF        | OFF        | OFF        | OFF             | OFF           | 3.3        | MEDIUM       
+UART2_TXD        |           | V22/2         | Y          | out   | IOR31[B] | LVCMOS33   | 8     | UP        | OFF       | OFF        | OFF        | OFF        | OFF             | OFF           | 3.3        | MEDIUM       
 DDR3_INIT        |           | N22/3         | Y          | out   | IOR80[B] | LVCMOS33   | 8     | NONE      | OFF       | OFF        | OFF        | OFF        | OFF             | OFF           | 3.3        | MEDIUM       
 DDR3_BANK[0]     |           | M4/7          | Y          | out   | IOL49[A] | SSTL15     | 8     | NONE      | OFF       | OFF        | OFF        | OFF        | OFF             | OFF           | 1.5        | MEDIUM       
 DDR3_BANK[1]     |           | L5/7          | Y          | out   | IOL47[A] | SSTL15     | 8     | NONE      | OFF       | OFF        | OFF        | OFF        | OFF             | OFF           | 1.5        | MEDIUM       
@@ -449,8 +449,8 @@ U21/2    | -                | in    | IOR26[A] | LVCMOS33 | 8     | UP        | 
 V21/2    | -                | in    | IOR26[B] | LVCMOS33 | 8     | UP        | OFF       | ON         | OFF        | OFF        | OFF             | OFF           | 3.3   | MEDIUM       
 Y22/2    | -                | in    | IOR29[A] | LVCMOS33 | 8     | UP        | OFF       | ON         | OFF        | OFF        | OFF             | OFF           | 3.3   | MEDIUM       
 Y23/2    | -                | in    | IOR29[B] | LVCMOS33 | 8     | UP        | OFF       | ON         | OFF        | OFF        | OFF             | OFF           | 3.3   | MEDIUM       
-U22/2    | -                | in    | IOR31[A] | LVCMOS33 | 8     | UP        | OFF       | ON         | OFF        | OFF        | OFF             | OFF           | 3.3   | MEDIUM       
-V22/2    | -                | in    | IOR31[B] | LVCMOS33 | 8     | UP        | OFF       | ON         | OFF        | OFF        | OFF             | OFF           | 3.3   | MEDIUM       
+U22/2    | UART2_RXD        | in    | IOR31[A] | LVCMOS33 | OFF   | UP        | OFF       | ON         | OFF        | OFF        | OFF             | OFF           | 3.3   | MEDIUM       
+V22/2    | UART2_TXD        | out   | IOR31[B] | LVCMOS33 | 8     | UP        | OFF       | OFF        | OFF        | OFF        | OFF             | OFF           | 3.3   | MEDIUM       
 AA22/2   | -                | in    | IOR33[A] | LVCMOS33 | 8     | UP        | OFF       | ON         | OFF        | OFF        | OFF             | OFF           | 3.3   | MEDIUM       
 AA23/2   | -                | in    | IOR33[B] | LVCMOS33 | 8     | UP        | OFF       | ON         | OFF        | OFF        | OFF             | OFF           | 3.3   | MEDIUM       
 AB24/2   | -                | in    | IOR35[A] | LVCMOS33 | 8     | UP        | OFF       | ON         | OFF        | OFF        | OFF             | OFF           | 3.3   | MEDIUM       
@@ -513,9 +513,9 @@ P18/3    | FLASH_SPI_CSN    | io    | IOR96[A] | LVCMOS33 | 8     | NONE      | 
 N18/3    | -                | in    | IOR96[B] | LVCMOS33 | 8     | UP        | OFF       | ON         | OFF        | OFF        | OFF             | OFF           | 3.3   | MEDIUM       
 R16/3    | -                | in    | IOR98[A] | LVCMOS33 | 8     | UP        | OFF       | ON         | OFF        | OFF        | OFF             | OFF           | 3.3   | MEDIUM       
 R17/3    | -                | in    | IOR98[B] | LVCMOS33 | 8     | UP        | OFF       | ON         | OFF        | OFF        | OFF             | OFF           | 3.3   | MEDIUM       
-N16/3    | UART2_RXD        | in    | IOR101[A] | LVCMOS33 | OFF   | NONE      | OFF       | ON         | OFF        | OFF        | OFF             | OFF           | 3.3   | MEDIUM       
+N16/3    | -                | in    | IOR101[A] | LVCMOS33 | 8     | UP        | OFF       | ON         | OFF        | OFF        | OFF             | OFF           | 3.3   | MEDIUM       
 N17/3    | -                | in    | IOR101[B] | LVCMOS33 | 8     | UP        | OFF       | ON         | OFF        | OFF        | OFF             | OFF           | 3.3   | MEDIUM       
-P15/3    | UART2_TXD        | out   | IOR103[A] | LVCMOS33 | 8     | NONE      | OFF       | OFF        | OFF        | OFF        | OFF             | OFF           | 3.3   | MEDIUM       
+P15/3    | -                | in    | IOR103[A] | LVCMOS33 | 8     | DOWN      | OFF       | ON         | OFF        | OFF        | OFF             | OFF           | 3.3   | MEDIUM       
 P16/3    | CLK              | in    | IOR103[B] | LVCMOS33 | OFF   | NONE      | OFF       | ON         | OFF        | OFF        | OFF             | OFF           | 3.3   | MEDIUM       
 R14/3    | FLASH_SPI_MOSI   | io    | IOR105[A] | LVCMOS33 | 8     | NONE      | OFF       | OFF        | OFF        | OFF        | OFF             | OFF           | 3.3   | MEDIUM       
 R15/3    | FLASH_SPI_MISO   | io    | IOR105[B] | LVCMOS33 | 8     | NONE      | OFF       | OFF        | OFF        | OFF        | OFF             | OFF           | 3.3   | MEDIUM       

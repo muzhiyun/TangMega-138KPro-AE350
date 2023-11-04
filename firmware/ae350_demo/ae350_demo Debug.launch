@@ -26,7 +26,7 @@
 <stringAttribute key="com.andestech.ide.debug.generalexception.handler.SUPPORT_GENERAL_EXCEPTION_HSP_SPBASE" value=""/>
 <intAttribute key="com.andestech.ide.debug.generalexception.handler.SUPPORT_HSP_TYPE" value="1"/>
 <stringAttribute key="com.andestech.ide.dsf.gdb.core.CONNECT_TYPE_OPTION_ID" value="2"/>
-<booleanAttribute key="com.andestech.ide.dsf.gdb.core.DISABLE_MEMORY_MAP" value="true"/>
+<booleanAttribute key="com.andestech.ide.dsf.gdb.core.DISABLE_MEMORY_MAP" value="false"/>
 <booleanAttribute key="com.andestech.ide.dsf.gdb.core.HOST_PORT_MANUALLY" value="false"/>
 <booleanAttribute key="com.andestech.ide.dsf.gdb.core.MCU_PROGRAM" value="true"/>
 <booleanAttribute key="com.andestech.ide.dsf.gdb.core.MEMORY_TRIGGER" value="false"/>
@@ -51,7 +51,7 @@
 <booleanAttribute key="org.eclipse.cdt.debug.gdbjtag.core.doReset" value="false"/>
 <stringAttribute key="org.eclipse.cdt.debug.gdbjtag.core.imageFileName" value=""/>
 <stringAttribute key="org.eclipse.cdt.debug.gdbjtag.core.imageOffset" value=""/>
-<stringAttribute key="org.eclipse.cdt.debug.gdbjtag.core.initCommands" value="load&#13;&#10;set *(int *)0xF0100014 = 0x3C"/>
+<stringAttribute key="org.eclipse.cdt.debug.gdbjtag.core.initCommands" value="load"/>
 <stringAttribute key="org.eclipse.cdt.debug.gdbjtag.core.ipAddress" value="localhost"/>
 <stringAttribute key="org.eclipse.cdt.debug.gdbjtag.core.jtagDeviceId" value="com.andestech.ide.dsf.gdbjtag.device.ice.AndesICEDevice"/>
 <booleanAttribute key="org.eclipse.cdt.debug.gdbjtag.core.loadImage" value="false"/>

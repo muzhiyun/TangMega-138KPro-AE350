@@ -21,16 +21,16 @@
 
 reset_vector:
 
-    li t0, 1000000  #10s
-delay_loop:
-    nop
-    addi t0, t0, -1
-    bnez t0, delay_loop
+    #li t0, 1000000  #10s
+#delay_loop:
+    #nop
+    #addi t0, t0, -1
+    #bnez t0, delay_loop
 	#li t0, 0   # 将零加载到寄存器 t0
 	#csrw mstatus, t0  # 将 t0 的值写入 mstatus 寄存器
 	/* Decide whether this is an NMI or cold reset */
-	#csrr t0, mcause
-	#bnez t0, nmi_handler
+	csrr t0, mcause
+	bnez t0, nmi_handler
 
 	.global _start
 	.type _start,@function

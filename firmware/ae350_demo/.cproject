@@ -18,6 +18,7 @@
 					<folderInfo id="config.nds32le-elf-mculib-v5.exe.debug.1203678354." name="/" resourcePath="">
 						<toolChain id="nds.nds32le-elf-mculib-v5.exe.debug.845603375" name="nds32le-elf-mculib-v5" superClass="nds.nds32le-elf-mculib-v5.exe.debug">
 							<option id="nds32le-elf-mculib-v5.managedbuild.option.toolchain.RSE_CONNECT.1393618288" name="RSE_CONNECT" superClass="nds32le-elf-mculib-v5.managedbuild.option.toolchain.RSE_CONNECT" useByScannerDiscovery="false" value="ICE" valueType="string"/>
+							<option id="nds32le-elf-mculib-v5.managedbuild.option.toolchain.RSE_TARGET.1564344100" name="RSE_TARGET" superClass="nds32le-elf-mculib-v5.managedbuild.option.toolchain.RSE_TARGET" useByScannerDiscovery="false" value="rse://LOCALHOST/~target/ADP-AE350-A25-GOWIN" valueType="string"/>
 							<targetPlatform id="target.nds32le-elf-mculib-v5.platform.exe.debug.592438458" name="Debug Platform" superClass="target.nds32le-elf-mculib-v5.platform.exe.debug"/>
 							<builder buildPath="${workspace_loc:/ae350_demo}/Debug" id="target.nds32le-elf-mculib-v5.builder.exe.debug.52802768" keepEnvironmentInBuildfile="false" managedBuildOn="true" name="Andes Make Builder" superClass="target.nds32le-elf-mculib-v5.builder.exe.debug"/>
 							<tool id="tool.nds32le-elf-mculib-v5.archiver.base.598483130" name="Andes Archiver" superClass="tool.nds32le-elf-mculib-v5.archiver.base"/>
@@ -48,7 +49,7 @@
 							<tool id="tool.nds32le-elf-mculib-v5.c.linker.exe.debug.124256929" name="Andes C Linker" superClass="tool.nds32le-elf-mculib-v5.c.linker.exe.debug">
 								<option defaultValue="-O0" id="nds.c.link.option.optimization.level.814010370" name="Optimization Level" superClass="nds.c.link.option.optimization.level" useByScannerDiscovery="false" value="-Og" valueType="string"/>
 								<option defaultValue="true" id="nds32le-elf-mculib-v5.c.link.option.noshared.base.968017936" name="No shared libraries (-static)" superClass="nds32le-elf-mculib-v5.c.link.option.noshared.base" useByScannerDiscovery="false" valueType="boolean"/>
-								<option id="nds32le-elf-mculib-v5.c.link.exe.debug.option.ldscript.499146017" name="Linker Script (-T)" superClass="nds32le-elf-mculib-v5.c.link.exe.debug.option.ldscript" useByScannerDiscovery="false" value="$(LDSAG_OUT)" valueType="string"/>
+								<option defaultValue="" id="nds32le-elf-mculib-v5.c.link.exe.debug.option.ldscript.499146017" name="Linker Script (-T)" superClass="nds32le-elf-mculib-v5.c.link.exe.debug.option.ldscript" useByScannerDiscovery="false" value="$(LDSAG_OUT)" valueType="string"/>
 								<option id="nds.c.link.option.nostart.376820259" name="Do not use standard start files (-nostartfiles)" superClass="nds.c.link.option.nostart" useByScannerDiscovery="false" value="true" valueType="boolean"/>
 								<option id="nds.c.link.option.virtualhosting.549264034" name="Virtual Hosting (-mvh)" superClass="nds.c.link.option.virtualhosting" useByScannerDiscovery="false" value="false" valueType="boolean"/>
 								<option id="nds.c.link.option.removesections.698946888" name="Remove unused sections (-ffunction-sections or -fdata-sections)" superClass="nds.c.link.option.removesections" useByScannerDiscovery="false" value="true" valueType="boolean"/>
@@ -118,6 +119,7 @@
 							<tool id="tool.nds32le-elf-mculib-v5.c.linker.exe.release.1643918537" name="Andes C Linker" superClass="tool.nds32le-elf-mculib-v5.c.linker.exe.release">
 								<option defaultValue="-O3" id="nds.c.link.option.optimization.level.638667920" name="Optimization Level" superClass="nds.c.link.option.optimization.level" valueType="string"/>
 								<option defaultValue="true" id="nds32le-elf-mculib-v5.c.link.option.noshared.base.1882821119" name="No shared libraries (-static)" superClass="nds32le-elf-mculib-v5.c.link.option.noshared.base" valueType="boolean"/>
+								<option defaultValue="" id="nds32le-elf-mculib-v5.c.link.exe.release.option.ldscript.355800163" name="Linker Script (-T)" superClass="nds32le-elf-mculib-v5.c.link.exe.release.option.ldscript" valueType="string"/>
 								<inputType id="tool.nds.c.linker.input.520675167" superClass="tool.nds.c.linker.input">
 									<additionalInput kind="additionalinputdependency" paths="$(USER_OBJS)"/>
 									<additionalInput kind="additionalinput" paths="$(LIBS)"/>
